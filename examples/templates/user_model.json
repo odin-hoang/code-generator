@@ -1,0 +1,29 @@
+{
+  "class_name": "UserModel",
+  "docstring": "A model class representing a user in the system.",
+  "properties": [
+    {
+      "name": "full_name",
+      "docstring": "Get the user's full name.",
+      "content": ["return f\"{self._first_name} {self._last_name}\""]
+    }
+  ],
+  "methods": [
+    {
+      "name": "__init__",
+      "params": ["first_name", "last_name", "email"],
+      "docstring": "Initialize a new user instance.",
+      "content": [
+        "self._first_name = first_name",
+        "self._last_name = last_name",
+        "self._email = email"
+      ]
+    },
+    {
+      "name": "update_email",
+      "params": ["new_email"],
+      "docstring": "Update the user's email address.",
+      "content": ["self._email = new_email", "return True"]
+    }
+  ]
+}
