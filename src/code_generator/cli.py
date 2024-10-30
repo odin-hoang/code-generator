@@ -3,6 +3,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+from . import __version__
 
 
 class CodeGenerator:
@@ -127,6 +128,10 @@ def main():
         type=int,
         default=4,
         help="Number of spaces for indentation (default: 4)",
+    )
+
+    parser.add_argument(
+        "-v", "--version", action="version", version=f"%(prog)s {__version__}"
     )
 
     args = parser.parse_args()
