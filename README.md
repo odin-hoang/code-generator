@@ -42,7 +42,11 @@ To generate a code snippet, run the following command:
 generate-code -t path/to/template.json -o path/to/output.py
 ```
 
-**Arguments** - `-t`, `--template`: Path to the JSON template file (required). - `-o`, `--output`: Output file path (defaults to stdout). - `--indent`: Number of spaces for indentation (default: 4).
+**Arguments**
+
+- `-t`, `--template`: Path to the JSON template file (required).
+- `-o`, `--output`: Output file path (defaults to stdout).
+- `--indent`: Number of spaces for indentation (default: 4).
 
 ## Development
 
